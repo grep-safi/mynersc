@@ -725,7 +725,7 @@ const createTreemap = (hData, nodeFieldList) => {
                 const colorScale = scaleLog()
                     .domain([1, maxVal])
                     // .range(['white', 'magenta']);
-                    .range(['steelblue', 'maroon']);
+                    .range(['white', 'maroon']);
 
                 const nodeValue = d.value === 0 ? 1 : d.value + 1;
                 return d === root ? "#fff" : `${colorScale(nodeValue)}`;
